@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+    <script src="node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">CRM</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer crm-menu">
+
+        <!-- Left aligned menu below button -->
+        <button id="demo-menu-lower-left"
+                class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+        </button>
+
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+            for="demo-menu-lower-left">
+            <li class="mdl-menu__item">Редактировать</li>
+        </ul>
+
+        <span class="mdl-layout-title">Файруза Идрисоваакепркпкiuhjbnkl</span>
+
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Клиенты</a>
+            <a class="mdl-navigation__link" href="">Сотрудники</a>
+            <a class="mdl-navigation__link" href="">Отделы</a>
+            <a class="mdl-navigation__link" href="">Календарь</a>
+            <a class="mdl-navigation__link" href="">Прогресс</a>
+            <a class="mdl-navigation__link" href="">Распределение</a>
+        </nav>
+
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here -->
+
+            <!--///////-->
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#expectation-panel" class="mdl-tabs__tab is-active">Ожидают</a>
+                    <a href="#consideration-panel" class="mdl-tabs__tab">Рассматриваются</a>
+                    <a href="#registration-panel" class="mdl-tabs__tab">Зарегистрированы</a>
+                    <a href="#refusing-panel" class="mdl-tabs__tab">Отказались</a>
+                </div>
+
+                <div class="actions">
+                    <div>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                        <i class="material-icons">add</i>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                        <i class="material-icons">settings</i>
+                    </button>
+                    </div>
+                </div>
+
+
+                <div class="mdl-tabs__panel is-active" id="expectation-panel">
+
+                    <!--////client card/////-->
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__menu">
+                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3">
+                                <i class="material-icons">more_vert</i>
+                            </button>
+                            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+                                <li class="mdl-menu__item">Редактировать</li>
+                                <li class="mdl-menu__item">Удалить</li>
+                            </ul>
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Лазурные небеса</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                            orjgfkl
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <label for="">тел. </label>+7(905)3297657   <label for="">email: </label>biruzka@gmail.com
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Подробности
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--////////-->
+
+                    <!--////client more info////-->
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+                        <div class="flex">
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                            orjgfkl
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                            orjgfkl
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                            orjgfkl
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                            orjgfkl
+                        </div>
+                        </div>
+                    </div>
+                    <!--////////-->
+
+                </div>
+
+
+                <div class="mdl-tabs__panel" id="consideration-panel">
+                </div>
+                <div class="mdl-tabs__panel" id="registration-panel">
+                </div>
+                <div class="mdl-tabs__panel" id="refusing-panel">
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+</div>
+
+
+</body>
+</html>
