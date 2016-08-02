@@ -1,8 +1,24 @@
 label {
   font-weight: bold;
+  display: inline-block;
+}
+.red {
+  background-color: red;
+}
+.content-area {
+  padding: 1em 0em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  min-height: 50em;
 }
 .crm-menu {
-  padding-right: 1em;
+  padding-top: 1em;
+}
+.crm-menu__title {
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display: block;
 }
 .flex--client-button-settings {
   width: 100%;
@@ -10,6 +26,33 @@ label {
   justify-content: flex-end;
   align-items: flex-start;
   align-content: flex-end;
+}
+.client-extra-info__part {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.selectdemoSelectHeader {
+  /* Please note: All these selectors are only applied to children of elements with the 'selectdemoSelectHeader' class */
+}
+.selectdemoSelectHeader .demo-header-searchbox {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.selectdemoSelectHeader .demo-select-header {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  padding-left: 10.667px;
+  height: 48px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.selectdemoSelectHeader md-content._md {
+  max-height: 240px;
 }
 .actions {
   display: flex;
@@ -19,6 +62,14 @@ label {
   align-content: flex-end;
   padding-top: 1em;
   margin-bottom: 1em;
+  flex-basis: 50%;
+}
+.functionality {
+  width: 100%;
+}
+.filters {
+  flex-basis: 50%;
+  flex-wrap: wrap;
 }
 .page-content {
   padding-left: 2em;
@@ -26,4 +77,143 @@ label {
 }
 .flex {
   display: flex;
+  align-content: flex-start;
+}
+.calendar-page {
+  display: flex;
+}
+.calendar {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-end;
+  width: 30%;
+}
+#calendar2 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 2em;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: #555555;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: #323232;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: #2c567a;
+}
+#calendar2 tbody td:nth-child(n+6),
+#calendar2 .holiday {
+  color: #e78c5c;
+}
+#calendar2 tbody td.today {
+  background: #dc0000;
+  color: #fff;
+}
+.border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+calendar {
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: white;
+  width: 300px;
+  border: solid 1px #cccccc;
+  margin-bottom: 10px;
+}
+calendar > div.header {
+  float: left;
+  width: 100%;
+  background: #2875c7;
+  height: 40px;
+  color: white;
+}
+calendar > div.header > * {
+  height: 40px;
+  line-height: 40px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+calendar > div.header > i {
+  float: left;
+  width: 40px;
+  font-size: 1.125em;
+  font-weight: bold;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0 10px;
+  cursor: pointer;
+}
+calendar > div.header > i.fa-angle-left {
+  text-align: left;
+}
+calendar > div.header > i.fa-angle-right {
+  text-align: right;
+  margin-left: -40px;
+}
+calendar > div.header > span {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 50px;
+  margin-left: -40px;
+  text-align: center;
+  padding-right: 40px;
+  color: inherit;
+}
+calendar > div.week {
+  float: left;
+  width: 100%;
+  border-top: solid 1px #cccccc;
+}
+calendar > div.week:first-child {
+  border-top: none;
+}
+calendar > div.week > span.day {
+  float: left;
+  width: 14.28571429%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-left: solid 1px #cccccc;
+  font-size: 0.75em;
+  text-align: center;
+  height: 30px;
+  line-height: 30px !important;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  cursor: pointer;
+  color: black;
+}
+calendar > div.week > span.day:first-child {
+  border-left: none;
+}
+calendar > div.week > span.day.today {
+  background: #E3F2FF;
+}
+calendar > div.week > span.day.different-month {
+  color: #C0C0C0;
+}
+calendar > div.week > span.day.selected {
+  background: #2875c7;
+  color: white;
+}
+calendar > div.week.names > span {
+  color: #2875c7;
+  font-weight: bold;
 }

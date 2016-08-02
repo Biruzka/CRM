@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+    <script src="node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">CRM</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <div class="crm-menu">
+            <div class="flex">
+                <button id="demo-menu-lower-left"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <span class="mdl-layout-title crm-menu__title">Файруза Идрисова</span>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-left">
+                    <li class="mdl-menu__item">Редактировать</li>
+                </ul>
+            </div>
+
+            <nav class="mdl-navigation">
+
+                <!-- Left aligned menu below button -->
+
+                <a class="mdl-navigation__link" href="">Клиенты</a>
+                <a class="mdl-navigation__link" href="">Сотрудники</a>
+                <a class="mdl-navigation__link" href="">Отделы</a>
+                <a class="mdl-navigation__link" href="">Календарь</a>
+                <a class="mdl-navigation__link" href="">Прогресс</a>
+                <a class="mdl-navigation__link" href="">Распределение</a>
+            </nav>
+        </div>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here -->
+
+            <!--///////-->
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#expectation-panel" class="mdl-tabs__tab is-active">Ожидают</a>
+                    <a href="#consideration-panel" class="mdl-tabs__tab">Рассматриваются</a>
+                    <a href="#registration-panel" class="mdl-tabs__tab">Зарегистрированы</a>
+                    <a href="#refusing-panel" class="mdl-tabs__tab">Отказались</a>
+                </div>
+
+
+                <!--///panel///-->
+                <div class="mdl-tabs__panel is-active" id="expectation-panel">
+
+
+                    <!--/////////////-->
+                    <div class="functionality flex">
+                        <!--filters-->
+                        <div class="filters flex">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Город</label>
+                                </div>
+                            </form>
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Отдел</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!--//////-->
+
+                        <!--//////Actions buttins filters///////-->
+                        <div class="actions">
+                            <div>
+                                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                                    <i class="material-icons">add</i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--/////////-->
+                    </div>
+                    <!--///////////-->
+
+
+                    <!--//content/-->
+                    <div class="content-area">
+                        <!--////calendar page start//-->
+                        <div class="calendar-page">
+                        <div>
+                            <section class="calendar-todo">
+                                <div class="flex calendar">
+                                <table id="calendar2">
+                                <thead>
+                                <tr><td>‹<td colspan="5"><td>›
+                                <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                                <tbody>
+                                </table>
+                                </div>
+                                <script>
+                                function Calendar2(id, year, month) {
+                                var Dlast = new Date(year,month+1,0).getDate(),
+                                D = new Date(year,month,Dlast),
+                                DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+                                DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+                                calendar = '<tr>',
+                                month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+                                if (DNfirst != 0) {
+                                for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+                                }else{
+                                for(var  i = 0; i < 6; i++) calendar += '<td>';
+                                }
+                                for(var  i = 1; i <= Dlast; i++) {
+                                if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+                                calendar += '<td class="today">' + i;
+                                }else{
+                                calendar += '<td>' + i;
+                                }
+                                if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+                                calendar += '<tr>';
+                                }
+                                }
+                                for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+                                document.querySelector('#'+id+' tbody').innerHTML = calendar;
+                                document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+                                document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+                                document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+                                if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                                document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+                                }
+                                }
+                                Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+                                // переключатель минус месяц
+                                document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+                                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+                                }
+                                // переключатель плюс месяц
+                                document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+                                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+                                }
+                                </script>
+                            </section>
+                        </div>
+
+                        <div>
+                            <section class="todo-list">
+                                <article class="todo">
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <div class="flex flex--client-button-settings">
+                                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                                Подробности
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </section>
+                        </div>
+
+                        </div>
+                        <!--/////calendar page end/////-->
+                    </div>
+                    <!--////content end////-->
+                </div>
+                <!--////panel end////-->
+
+                <div class="mdl-tabs__panel" id="consideration-panel">
+                </div>
+                <div class="mdl-tabs__panel" id="registration-panel">
+                </div>
+                <div class="mdl-tabs__panel" id="refusing-panel">
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!--///////////////////////////-->
+
+<!--///////////////////////////////-->
