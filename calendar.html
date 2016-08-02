@@ -77,29 +77,19 @@
 
                     <!--/////////////-->
                     <div class="functionality flex">
-                        <!--filters-->
-                        <div class="filters flex">
-                            <form action="#">
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="sample3">
-                                    <label class="mdl-textfield__label" for="sample3">Город</label>
-                                </div>
-                            </form>
-                            <form action="#">
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="sample3">
-                                    <label class="mdl-textfield__label" for="sample3">Отдел</label>
-                                </div>
-                            </form>
-                        </div>
-                        <!--//////-->
+
 
                         <!--//////Actions buttins filters///////-->
-                        <div class="actions">
+                        <div class="actions actions--calendar ">
                             <div>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Запланировано/Сделано
+                                </a>
+
                                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
                                     <i class="material-icons">add</i>
                                 </button>
+
                             </div>
                         </div>
                         <!--/////////-->
@@ -111,75 +101,171 @@
                     <div class="content-area">
                         <!--////calendar page start//-->
                         <div class="calendar-page">
-                        <div>
-                            <section class="calendar-todo">
-                                <div class="flex calendar">
-                                <table id="calendar2">
-                                <thead>
-                                <tr><td>‹<td colspan="5"><td>›
-                                <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
-                                <tbody>
-                                </table>
-                                </div>
-                                <script>
-                                function Calendar2(id, year, month) {
-                                var Dlast = new Date(year,month+1,0).getDate(),
-                                D = new Date(year,month,Dlast),
-                                DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
-                                DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
-                                calendar = '<tr>',
-                                month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
-                                if (DNfirst != 0) {
-                                for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
-                                }else{
-                                for(var  i = 0; i < 6; i++) calendar += '<td>';
-                                }
-                                for(var  i = 1; i <= Dlast; i++) {
-                                if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-                                calendar += '<td class="today">' + i;
-                                }else{
-                                calendar += '<td>' + i;
-                                }
-                                if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
-                                calendar += '<tr>';
-                                }
-                                }
-                                for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
-                                document.querySelector('#'+id+' tbody').innerHTML = calendar;
-                                document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
-                                document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
-                                document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
-                                if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
-                                document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
-                                }
-                                }
-                                Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
-                                // переключатель минус месяц
-                                document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-                                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
-                                }
-                                // переключатель плюс месяц
-                                document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-                                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
-                                }
-                                </script>
-                            </section>
-                        </div>
 
-                        <div>
-                            <section class="todo-list">
-                                <article class="todo">
-                                    <div class="mdl-card__actions mdl-card--border">
-                                        <div class="flex flex--client-button-settings">
-                                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                                Подробности
-                                            </a>
+                            <div class="calendar-todo">
+
+                                    <table id="calendar2">
+                                    <thead>
+                                    <tr><td>‹<td colspan="5"><td>›
+                                    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                                    <tbody>
+                                    </table>
+
+                                    <script>
+                                    function Calendar2(id, year, month) {
+                                    var Dlast = new Date(year,month+1,0).getDate(),
+                                    D = new Date(year,month,Dlast),
+                                    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+                                    DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+                                    calendar = '<tr>',
+                                    month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+                                    if (DNfirst != 0) {
+                                    for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+                                    }else{
+                                    for(var  i = 0; i < 6; i++) calendar += '<td>';
+                                    }
+                                    for(var  i = 1; i <= Dlast; i++) {
+                                    if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+                                    calendar += '<td class="today">' + i;
+                                    }else{
+                                    calendar += '<td>' + i;
+                                    }
+                                    if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+                                    calendar += '<tr>';
+                                    }
+                                    }
+                                    for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+                                    document.querySelector('#'+id+' tbody').innerHTML = calendar;
+                                    document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+                                    document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+                                    document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+                                    if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                                    document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+                                    }
+                                    }
+                                    Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+                                    // переключатель минус месяц
+                                    document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+                                    Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+                                    }
+                                    // переключатель плюс месяц
+                                    document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+                                    Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+                                    }
+                                    </script>
+
+
+                                <!--filters-->
+                                <div class="filters filters--calendar flex">
+                                    <form action="#">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Город</label>
                                         </div>
-                                    </div>
-                                </article>
+                                    </form>
+                                    <form action="#">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Отдел</label>
+                                        </div>
+                                    </form>
+                                    <form action="#">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Исполнитель</label>
+                                        </div>
+                                    </form>
+                                    <form action="#">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Клиент</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--//////-->
 
-                            </section>
-                        </div>
+                            </div>
+
+
+
+                            <div class="todo-list">
+
+
+                                <!--////client card/////-->
+                                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+
+
+                                    <div class="mdl-card__menu">
+                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3">
+                                            <i class="material-icons">more_vert</i>
+                                        </button>
+                                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+                                            <li class="mdl-menu__item">Редактировать</li>
+
+                                            <!--/////-->
+                                            <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
+                                            <dialog class="mdl-dialog">
+                                                <h4 class="mdl-dialog__title">Удаление</h4>
+                                                <div class="mdl-dialog__content">
+                                                    <p>
+                                                        Вы действительно желаете удалить?
+                                                    </p>
+                                                </div>
+                                                <div class="mdl-dialog__actions">
+                                                    <button type="button" class="mdl-button">Agree</button>
+                                                    <button type="button" class="mdl-button close">Disagree</button>
+                                                </div>
+                                            </dialog>
+                                            <script>
+                                                var dialog = document.querySelector('dialog');
+                                                var showDialogButton = document.querySelector('#show-dialog');
+                                                if (! dialog.showModal) {
+                                                    dialogPolyfill.registerDialog(dialog);
+                                                }
+                                                showDialogButton.addEventListener('click', function() {
+                                                    dialog.showModal();
+                                                });
+                                                dialog.querySelector('.close').addEventListener('click', function() {
+                                                    dialog.close();
+                                                });
+                                            </script>
+                                            <!--////-->
+                                        </ul>
+                                    </div>
+
+
+
+                                    <div class="mdl-card__supporting-text">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                                            <span class="mdl-checkbox__label">Позвонить клиенту</span>
+                                        </label>
+                                        <div class="mdl-card__title">
+
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                                        orjgfkl
+                                    </div>
+
+                                    <div class="mdl-card__supporting-text">
+                                        <label for="">исполнитель: </label> Имя Фамилия<br>
+                                        <label for="">клиент: </label> Название клиента<br>
+                                    </div>
+
+                                    <div class="mdl-card__supporting-text">
+                                        19.06.2016 20:00
+                                    </div>
+
+
+
+                                </div>
+                                <!--////////-->
+
+
+
+
+                            </div>
 
                         </div>
                         <!--/////calendar page end/////-->

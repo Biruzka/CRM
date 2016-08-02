@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+    <script src="node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">CRM</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <div class="crm-menu">
+            <div class="flex">
+                <button id="demo-menu-lower-left"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <span class="mdl-layout-title crm-menu__title">Файруза Идрисова</span>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-left">
+                    <li class="mdl-menu__item">Редактировать</li>
+                </ul>
+            </div>
+
+            <nav class="mdl-navigation">
+
+                <!-- Left aligned menu below button -->
+
+                <a class="mdl-navigation__link" href="">Клиенты</a>
+                <a class="mdl-navigation__link" href="">Сотрудники</a>
+                <a class="mdl-navigation__link" href="">Отделы</a>
+                <a class="mdl-navigation__link" href="">Календарь</a>
+                <a class="mdl-navigation__link" href="">Прогресс</a>
+                <a class="mdl-navigation__link" href="">Распределение</a>
+            </nav>
+        </div>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here -->
+
+
+                    <!--/////////////-->
+                    <div class="functionality flex">
+
+
+                        <!--//////Actions buttins filters///////-->
+                        <div class="actions actions--calendar ">
+                            <div>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Отмена
+                                </a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Очистить изменения
+                                </a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Сохранить
+                                </a>
+
+                            </div>
+                        </div>
+                        <!--/////////-->
+                    </div>
+                    <!--///////////-->
+
+
+                    <!--//content/-->
+                    <div class="content-area">
+                        <!--////calendar page start//-->
+                        <div class="calendar-page">
+
+                            <div class="todo-list">
+
+
+                                <!--////client card/////-->
+                                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+                                    <div class="mdl-card__supporting-text">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                                            <span class="mdl-checkbox__label">Позвонить клиенту</span>
+                                        </label>
+                                        <div class="mdl-card__title">
+
+                                        </div>
+                                        <label for="">описание: </label> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                                        orjgfkl
+                                    </div>
+
+                                    <div class="mdl-card__supporting-text">
+                                        <label for="">клиент: </label> <br> Название клиента<br>
+                                    </div>
+
+                                    <div class="mdl-card__supporting-text">
+                                        <input type="date" name="calendar" value="2016-06-01"
+                                               >
+                                        19.06.2016 20:00
+                                    </div>
+                                </div>
+                                <!--////////-->
+
+                            </div>
+
+                        </div>
+                        <!--/////calendar page end/////-->
+                    </div>
+                    <!--////content end////-->
+
+
+
+
+
+
+        </div>
+    </main>
+</div>
+</body>
+</html>
