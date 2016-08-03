@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+    <script src="node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="node_modules/mdl-selectfield/dist/mdl-selectfield.min.css">
+    <script src="node_modules/mdl-selectfield/dist/mdl-selectfield.min.js"></script>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">CRM</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+        <div class="crm-menu">
+            <div class="flex">
+                <button id="demo-menu-lower-left"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <span class="mdl-layout-title crm-menu__title">Файруза Идрисова</span>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-left">
+                    <li class="mdl-menu__item">Редактировать</li>
+                </ul>
+            </div>
+
+            <nav class="mdl-navigation">
+
+                <!-- Left aligned menu below button -->
+
+                <a class="mdl-navigation__link" href="">Клиенты</a>
+                <a class="mdl-navigation__link" href="">Сотрудники</a>
+                <a class="mdl-navigation__link" href="">Отделы</a>
+                <a class="mdl-navigation__link" href="">Календарь</a>
+                <a class="mdl-navigation__link" href="">Прогресс</a>
+                <a class="mdl-navigation__link" href="">Распределение</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="mdl-layout__content">
+        <div class="page-content">
+
+            <div class="flex flex--width-100">
+                <!--//////Actions buttins filters///////-->
+                <div class="functionality flex">
+                    <div>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Отмена
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Очистить изменения
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Сохранить
+                        </a>
+                    </div>
+                </div>
+                <!--/////////-->
+            </div>
+
+
+            <!--content area-->
+            <div class="content-area ">
+
+                <form action="#" class="edit-form flex--column">
+                    <div class="mdl-card__supporting-text">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                        </label>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                            <span class="mdl-card__supporting-text" for="">Встроенное дело </span>
+                        </label><br>
+                        <span class="mdl-radio__label">
+                            <div class="mdl-selectfield mdl-js-selectfield">
+                              <select id="gender" class="mdl-selectfield__select">
+                                <option value=""></option>
+                                <option value="option1">КП</option>
+                                <option value="option2">Звонок</option>
+                                <option value="option2">Открытие счета</option>
+                                <option value="option2">Оформление предложения</option>
+                                <option value="option2">Отправка письма</option>
+                                <option value="option2">Получение письма</option>
+                              </select>
+                              <span class="mdl-selectfield__error">Select a value</span>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                            <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1" checked>
+                            <span class="mdl-card__supporting-text" for="">Другое </span>
+                        </label><br>
+                        <span class="mdl-radio__label">
+                           <div class="mdl-textfield mdl-js-textfield">
+                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, perferendis.
+                            </textarea>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        <label for="">Описание: </label> <br>
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5"></textarea>
+                                <label class="mdl-textfield__label" for="sample5"></label>
+                            </div>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        <label for="">Клиент: </label> <br>
+                        <div class="mdl-selectfield mdl-js-selectfield">
+                            <select id="gender" class="mdl-selectfield__select">
+                                <option value=""></option>
+                                <option value="option1">Клиент1</option>
+                                <option value="option2">Клиент2</option>
+                            </select>
+                            <span class="mdl-selectfield__error">Select a value</span>
+                        </div>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        <label for="">Дата и время: </label> <br>
+                        <div class="mdl-textfield mdl-js-textfield">
+                        <input type="date" name="calendar" value="2016-06-01">
+                        <input type="time" name="todo-time" value="14:00"></p>
+                            </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <!--content area-->
+        </div>
+    </main>
+
+</div>
+</body>
+</html>

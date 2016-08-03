@@ -1,14 +1,41 @@
+.flex--width-100 {
+  width: 100%;
+  display: flex;
+}
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-end;
+}
+.flex--around {
+  justify-content: space-between;
+}
+.flex--column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+}
+.flex--center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-end;
+}
+.flex-child--basis-100 {
+  flex-basis: 100%;
+}
 label {
   font-weight: bold;
   display: inline-block;
 }
-.red {
-  background-color: red;
-}
-.content-area {
-  padding: 1em 1em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  min-height: 50em;
+.functionality {
+  padding-top: 1em;
+  margin-bottom: 1em;
 }
 .crm-menu {
   padding-top: 1em;
@@ -54,36 +81,17 @@ label {
 .selectdemoSelectHeader md-content._md {
   max-height: 240px;
 }
-.actions {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-  align-content: flex-end;
-  padding-top: 1em;
-  margin-bottom: 1em;
-  flex-basis: 50%;
-}
-.actions--calendar {
-  flex-basis: 100%;
-}
-.functionality {
-  width: 100%;
-}
-.filters {
-  flex-basis: 50%;
-  flex-wrap: wrap;
-}
-.filters--calendar {
-  padding: 1em 1em;
-}
 .page-content {
   padding-left: 2em;
   padding-right: 2em;
 }
-.flex {
-  display: flex;
-  align-content: flex-start;
+.content-area {
+  padding: 1em 1em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  min-height: 50em;
+}
+.red {
+  background-color: red;
 }
 .calendar-page {
   display: flex;
@@ -125,6 +133,9 @@ label {
 #calendar2 tbody td.today {
   background: #dc0000;
   color: #fff;
+}
+.filters {
+  display: flex;
 }
 .todo-list {
   display: flex;
