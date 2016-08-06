@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
     <script src="node_modules/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
     <link rel="stylesheet" href="node_modules/mdl-selectfield/dist/mdl-selectfield.min.css">
     <script src="node_modules/mdl-selectfield/dist/mdl-selectfield.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title">CRM</span>
+            <span class="mdl-layout-title">CRM Clients</span>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
@@ -36,12 +37,12 @@
     </header>
     <div class="mdl-layout__drawer">
         <div class="crm-menu">
-            <div class="flex">
+            <div class="flex flex--start flex--nowrap">
                 <button id="demo-menu-lower-left"
                         class="mdl-button mdl-js-button mdl-button--icon">
                     <i class="material-icons">more_vert</i>
                 </button>
-                <span class="mdl-layout-title crm-menu__title">Файруза Идрисова</span>
+                <span class="mdl-layout-title crm-menu__title">Идрисова Ф. Ш.</span>
                 <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                     for="demo-menu-lower-left">
                     <li class="mdl-menu__item">Редактировать</li>
@@ -61,324 +62,236 @@
             </nav>
         </div>
     </div>
+
     <main class="mdl-layout__content">
+
         <div class="page-content"><!-- Your page-content goes here -->
 
-            <!--///////-->
-            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-                <div class="mdl-tabs__tab-bar">
-                    <a href="#expectation-panel" class="mdl-tabs__tab is-active">Ожидают</a>
-                    <a href="#consideration-panel" class="mdl-tabs__tab">Рассматриваются</a>
-                    <a href="#registration-panel" class="mdl-tabs__tab">Зарегистрированы</a>
-                    <a href="#refusing-panel" class="mdl-tabs__tab">Отказались</a>
-                </div>
-
-
-
-                <div class="mdl-tabs__panel is-active" id="expectation-panel">
-
-                    <div class="flex flex--around">
-
-                        <div class="filters">
-                            <div class="mdl-card__supporting-text">
-                                <label for="">Город: </label> <br>
-                                <div class="mdl-selectfield mdl-js-selectfield">
-                                    <select id="gender" class="mdl-selectfield__select">
-                                        <option value=""></option>
-                                        <option value="option1">Клиент1</option>
-                                        <option value="option2">Клиент2</option>
-                                    </select>
-                                    <span class="mdl-selectfield__error">Select a value</span>
-                                </div>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <label for="">Отдел: </label> <br>
-                                <div class="mdl-selectfield mdl-js-selectfield">
-                                    <select id="gender" class="mdl-selectfield__select">
-                                        <option value=""></option>
-                                        <option value="option1">Клиент1</option>
-                                        <option value="option2">Клиент2</option>
-                                    </select>
-                                    <span class="mdl-selectfield__error">Select a value</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="functionality flex">
-                            <div>
-                                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-                                    <i class="material-icons">add</i>
-                                </button>
-
-                            </div>
-                        </div>
-                        <!--/////////-->
-                    </div>
-
-
-                    <!--//clients/-->
-                    <div class="content-area">
-                    <!--////client card/////-->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3" onclick="return false">
-                                <i class="material-icons">more_vert</i>
-                            </button>
-                            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-                                <li class="mdl-menu__item">Редактировать</li>
-                                <!--<li  class="mdl-menu__item ">Удалить</li>-->
-
-                                <!--/////-->
-                                <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
-                                <dialog class="mdl-dialog">
-                                    <h4 class="mdl-dialog__title">Удаление</h4>
-                                    <div class="mdl-dialog__content">
-                                        <p>
-                                            Вы действительно желаете удалить?
-                                        </p>
-                                    </div>
-                                    <div class="mdl-dialog__actions">
-                                        <button type="button" class="mdl-button">Agree</button>
-                                        <button type="button" class="mdl-button close">Disagree</button>
-                                    </div>
-                                </dialog>
-                                <script>
-                                    var dialog = document.querySelector('dialog');
-                                    var showDialogButton = document.querySelector('#show-dialog');
-                                    if (! dialog.showModal) {
-                                        dialogPolyfill.registerDialog(dialog);
-                                    }
-                                    showDialogButton.addEventListener('click', function() {
-                                        dialog.showModal();
-                                    });
-                                    dialog.querySelector('.close').addEventListener('click', function() {
-                                        dialog.close();
-                                    });
-                                </script>
-                                <!--////-->
-                            </ul>
-                        </div>
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Лазурные небеса</h2>
-                        </div>
-
-                        <div class="mdl-card__supporting-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris sagittis pellentesque lacus eleifend lacinia...
-                            orjgfkl
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <label for="">тел. </label>+7(905)3297657   <label for="">email: </label>biruzka@gmail.com
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <div class="flex flex--client-button-settings">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Подробности
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--////////-->
-
-                    <!--////client card/////-->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3">
-                                <i class="material-icons">more_vert</i>
-                            </button>
-                            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-                                <li class="mdl-menu__item">Редактировать</li>
-                                <!--<li  class="mdl-menu__item ">Удалить</li>-->
-
-                                <!--/////-->
-                                <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
-                                <dialog class="mdl-dialog">
-                                    <h4 class="mdl-dialog__title">Удаление</h4>
-                                    <div class="mdl-dialog__content">
-                                        <p>
-                                            Вы действительно желаете удалить?
-                                        </p>
-                                    </div>
-                                    <div class="mdl-dialog__actions">
-                                        <button type="button" class="mdl-button">Agree</button>
-                                        <button type="button" class="mdl-button close">Disagree</button>
-                                    </div>
-                                </dialog>
-                                <script>
-                                    var dialog = document.querySelector('dialog');
-                                    var showDialogButton = document.querySelector('#show-dialog');
-                                    if (! dialog.showModal) {
-                                        dialogPolyfill.registerDialog(dialog);
-                                    }
-                                    showDialogButton.addEventListener('click', function() {
-                                        dialog.showModal();
-                                    });
-                                    dialog.querySelector('.close').addEventListener('click', function() {
-                                        dialog.close();
-                                    });
-                                </script>
-                                <!--////-->
-                            </ul>
-                        </div>
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Лазурные небеса</h2>
-                        </div>
-
-                        <div class="mdl-card__supporting-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris sagittis pellentesque lacus eleifend lacinia...
-                            orjgfkl
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <label for="">тел. </label>+7(905)3297657   <label for="">email: </label>biruzka@gmail.com
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <div class="flex flex--client-button-settings">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Подробности
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--////////-->
-
-                    <!--////client card/////-->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3">
-                                <i class="material-icons">more_vert</i>
-                            </button>
-                            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-                                <li class="mdl-menu__item">Редактировать</li>
-                                <!--<li  class="mdl-menu__item ">Удалить</li>-->
-
-                                <!--/////-->
-                                <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
-                                <dialog class="mdl-dialog">
-                                    <h4 class="mdl-dialog__title">Удаление</h4>
-                                    <div class="mdl-dialog__content">
-                                        <p>
-                                            Вы действительно желаете удалить?
-                                        </p>
-                                    </div>
-                                    <div class="mdl-dialog__actions">
-                                        <button type="button" class="mdl-button">Agree</button>
-                                        <button type="button" class="mdl-button close">Disagree</button>
-                                    </div>
-                                </dialog>
-                                <script>
-                                    var dialog = document.querySelector('dialog');
-                                    var showDialogButton = document.querySelector('#show-dialog');
-                                    if (! dialog.showModal) {
-                                        dialogPolyfill.registerDialog(dialog);
-                                    }
-                                    showDialogButton.addEventListener('click', function() {
-                                        dialog.showModal();
-                                    });
-                                    dialog.querySelector('.close').addEventListener('click', function() {
-                                        dialog.close();
-                                    });
-                                </script>
-                                <!--////-->
-                            </ul>
-                        </div>
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Лазурные небеса</h2>
-                        </div>
-
-                        <div class="mdl-card__supporting-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris sagittis pellentesque lacus eleifend lacinia...
-                            orjgfkl
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <label for="">тел. </label>+7(905)3297657   <label for="">email: </label>biruzka@gmail.com
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <div class="flex flex--client-button-settings">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Подробности
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--////////-->
-
-                    <!--////client more info////-->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col  client-extra-info">
-                        <div class="flex">
-                            <div class="mdl-card__supporting-text">
-                                <label for="">О клиенте:</label><br><br>
-                                <div class="client-extra-info__part"><label for="">Категория: </label><br>Салоны красоты</div>
-                                <div class="client-extra-info__part"><label for="">Добавлен: </label><br>19.03.2016</div>
-                                <div class="client-extra-info__part"><label for="">Зарегистрирован: </label><br>19.03.2016</div>
-                                <div class="client-extra-info__part"><label for="">VK: </label><br>vk/biruzka</div>
-                                <div class="client-extra-info__part"><label for="">Instagram: </label><br>biruzka<br></div>
-                                <div class="client-extra-info__part"><label for="">Сайт: </label><br>biruzka@fnjclDSJKCFA.COM<br></div>
-                                <div class="client-extra-info__part"><label for="">Адрес: </label><br>Казань Глушко 4 70<br></div>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <label for="">ЛПР:</label><br><br>
-                                <div class="client-extra-info__part"><label for="">ФИО: </label><br>Идрисова Файруза Шавкатовна</div>
-                                <div class="client-extra-info__part"><label for="">Должность: </label><br>Идрисова Файруза Шавкатовна<br></div>
-                                <div class="client-extra-info__part"><label for="">Тел: </label><br>Идрисова Файруза Шавкатовна<br></div>
-                                <div class="client-extra-info__part"><label for="">Email: </label><br>Идрисова Файруза Шавкатовна<br></div>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <label for="">Сотрудники Govermedia:</label><br><br>
-                                <div class="client-extra-info__part"><label for="">Аналитик: </label><br>Идрисова Файруза Шавкатовна<br></div>
-                                <div class="client-extra-info__part"><label for="">Менеджеры: </label><br>
-                                    <div>
-                                        <!-- Icon button -->
-                                        <button class="mdl-button mdl-js-button mdl-button--icon" id="btn-delete-meneger">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-delete-meneger">
-                                            <li class="mdl-menu__item">Удалить</li>
-                                        </ul>
-                                        Идрисова Файруза Шавкатовна
-                                    </div>
-                                    <div>
-                                        <!-- Icon button -->
-                                        <button class="mdl-button mdl-js-button mdl-button--icon" id="btn-delete-meneger">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-delete-meneger">
-                                            <li class="mdl-menu__item">Удалить</li>
-                                        </ul>
-                                        Идрисова Файруза Шавкатовна
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <div class="client-extra-info__part"><label for="">Примечания: </label><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis distinctio esse eveniet in, inventore molestiae nemo placeat voluptas? Aperiam, nostrum?</p></div>
+            <!--filters-->
+            <div class="flex flex--around">
+                <div class="filters">
+                    <div class="mdl-card__supporting-text filters__block">
+                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                            <select id="city" class="mdl-selectfield__select ">
+                                <option value=""></option>
+                                <option value="option1">Город1</option>
+                                <option value="option2">Город2</option>
+                            </select>
+                            <label class="mdl-selectfield__label" for="city">Город</label>
+                            <span class="mdl-selectfield__error">Select a value</span>
                         </div>
                     </div>
-                    <!--////////-->
+                    <div class="mdl-card__supporting-text filters__block">
+                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                            <select id="department" class="mdl-selectfield__select">
+                                <option value=""></option>
+                                <option value="option1">Отдел1</option>
+                                <option value="option2">Отдел2</option>
+                            </select>
+                            <label class="mdl-selectfield__label" for="department">Отдел</label>
+                            <span class="mdl-selectfield__error">Select a value</span>
+                        </div>
+                    </div>
+                    <div class="mdl-card__supporting-text filters__block">
+                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                            <select id="department" class="mdl-selectfield__select">
+                                <option value=""></option>
+                                <option value="option1">Ожидают</option>
+                                <option value="option2">Рассматриваются</option>
+                                <option value="option1">Зарегистрированы</option>
+                                <option value="option2">Отказались</option>
+                            </select>
+                            <label class="mdl-selectfield__label" for="department">Статус</label>
+                            <span class="mdl-selectfield__error">Select a value</span>
+                        </div>
+                    </div>
+                </div>
 
-                </div>
-                </div>
-<!--////clients end////-->
-
-                <div class="mdl-tabs__panel" id="consideration-panel">
-                </div>
-                <div class="mdl-tabs__panel" id="registration-panel">
-                </div>
-                <div class="mdl-tabs__panel" id="refusing-panel">
+                <div class="functionality flex">
+                    <div>
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
                 </div>
             </div>
+            <!--/////////-->
 
+            <!--//clients/-->
+            <div class="content-area">
 
+                <!--////client card/////-->
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn1">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+                            <li class="mdl-menu__item">Редактировать</li>
+                            <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
+                        </ul>
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Лазурные небеса</h2>
+                    </div>
 
+                    <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                        orjgfkl
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <label for="">тел. </label>+7(905)3297657   <label for="">email: </label>biruzka@gmail.com
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <div class="flex flex--client-button-settings">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " id="show_link" onclick="dip('#mp');return false;">
+                                Подробности
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--////////-->
+
+                <!--////client more info////-->
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col client-extra-info" style="display: none" id="mp">
+                    <div class="client-extra-info__flex">
+                        <div class="mdl-card__supporting-text client-extra-info__block">
+                            <label class="client-extra-info__label" for="">О клиенте:</label><br><br>
+                            <div class="client-extra-info__part"><label for="">Категория: </label><br>Салоны красоты</div>
+                            <div class="client-extra-info__part"><label for="">Добавлен: </label><br>19.03.2016</div>
+                            <div class="client-extra-info__part"><label for="">Зарегистрирован: </label><br>19.03.2016</div>
+                            <div class="client-extra-info__part"><label for="">VK: </label><br>vk/biruzka</div>
+                            <div class="client-extra-info__part"><label for="">Instagram: </label><br>biruzka<br></div>
+                            <div class="client-extra-info__part"><label for="">Сайт: </label><br>biruzka@fnjclDSJKCFA.COM<br></div>
+                            <div class="client-extra-info__part"><label for="">Адрес: </label><br>Казань Глушко 4 70<br></div>
+                        </div>
+                        <div class="mdl-card__supporting-text client-extra-info__block">
+                            <label class="client-extra-info__label" for="">ЛПР:</label><br><br>
+                            <div class="client-extra-info__part"><label for="">ФИО: </label><br>Идрисова Ф. Ш.</div>
+                            <div class="client-extra-info__part"><label for="">Должность: </label><br>Директор<br></div>
+                            <div class="client-extra-info__part"><label for="">Тел: </label><br>78657890765<br></div>
+                            <div class="client-extra-info__part"><label for="">Email: </label><br>biruzka@gmail.com<br></div>
+                        </div>
+                        <div class="mdl-card__supporting-text client-extra-info__block">
+                            <label class="client-extra-info__label" for="">Сотрудники Govermedia:</label><br><br>
+                            <div class="client-extra-info__part"><label for="">Аналитик: </label><br>Идрисова Ф. Ш.<br></div>
+                            <div class="client-extra-info__part"><label for="">Менеджеры: </label><br>
+                                <div>
+                                    <!-- Icon button -->
+                                    <button class="mdl-button mdl-js-button mdl-button--icon" id="btn-delete-meneger">
+                                        <i class="material-icons">more_vert</i>
+                                    </button>
+                                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-delete-meneger">
+                                        <li class="mdl-menu__item">Удалить</li>
+                                    </ul>
+                                    Идрисова Ф. Ш.
+                                </div>
+                                <div>
+                                    <!-- Icon button -->
+                                    <button class="mdl-button mdl-js-button mdl-button--icon" id="btn-delete-meneger">
+                                        <i class="material-icons">more_vert</i>
+                                    </button>
+                                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-delete-meneger">
+                                        <li class="mdl-menu__item">Удалить</li>
+                                    </ul>
+                                    Идрисова Ф. Ш.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="client-extra-info__part"><label for="">Примечания: </label><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis distinctio esse eveniet in, inventore molestiae nemo placeat voluptas? Aperiam, nostrum?</p></div>
+                    </div>
+                </div>
+                <!--////////-->
+
+                <!--////client card/////-->
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn2" onclick="return false">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+                            <li class="mdl-menu__item">Редактировать</li>
+                            <li  class="mdl-menu__item ">Удалить</li>
+                        </ul>
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Лазурные небеса</h2>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                        orjgfkl
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <label for="">тел. </label>+7(905)3297657   <label for="">email: </label>biruzka@gmail.com
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <div class="flex flex--client-button-settings">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Подробности
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--////////-->
+
+                <!--////client card/////-->
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+                            <li class="mdl-menu__item">Редактировать</li>
+                            <li  class="mdl-menu__item ">Удалить</li>
+                        </ul>
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Лазурные небеса</h2>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                        orjgfkl
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <label for="">тел. </label>+7(905)3297657   <label for="">email: </label>biruzka@gmail.com
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <div class="flex flex--client-button-settings">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Подробности
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--////////-->
+
+            </div>
+            <!--////clients end////-->
         </div>
     </main>
 </div>
-
-
+<script>
+    function dip (mp)
+    {
+        if ($(mp).css('display') == 'none')
+        {
+            $(mp).animate({height: 'show'}, 500);
+        }
+        else
+        {
+            $(mp).animate({height: 'hide'}, 500);
+        }}
+</script>
 
 </body>
 </html>

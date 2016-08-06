@@ -9,6 +9,13 @@
   align-items: flex-start;
   align-content: flex-end;
 }
+.flex--start {
+  display: flex;
+  justify-content: flex-start;
+}
+.flex--nowrap {
+  flex-wrap: nowrap;
+}
 .flex--around {
   justify-content: space-between;
 }
@@ -54,6 +61,18 @@ label {
   align-items: flex-start;
   align-content: flex-end;
 }
+.client-extra-info__label {
+  color: #00001A;
+}
+.client-extra-info__flex {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.client-extra-info__block {
+  flex: 12 3 10em;
+}
 .client-extra-info__part {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -89,6 +108,7 @@ label {
   padding: 1em 1em;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   min-height: 50em;
+  overflow: auto;
 }
 .red {
   background-color: red;
@@ -106,7 +126,7 @@ label {
   flex-basis: 35%;
 }
 #calendar2 {
-  width: 100%;
+  width: 80%;
   font: monospace;
   line-height: 1.2em;
   font-size: 2em;
@@ -134,8 +154,23 @@ label {
   background: #dc0000;
   color: #fff;
 }
+.edit-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.edit-form__block {
+  flex: 12 3 7em;
+}
+.edit-form__block--check {
+  flex: 5 3 1em;
+}
 .filters {
   display: flex;
+  flex-flow: row wrap;
+}
+.filters__block {
+  flex: 12 3 20em;
 }
 .todo-list {
   display: flex;

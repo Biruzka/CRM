@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
     <script src="node_modules/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="node_modules/mdl-selectfield/dist/mdl-selectfield.min.css">
+    <script src="node_modules/mdl-selectfield/dist/mdl-selectfield.min.js"></script>
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title">CRM</span>
+            <span class="mdl-layout-title">CRM Calendar</span>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
@@ -33,17 +36,18 @@
     </header>
     <div class="mdl-layout__drawer">
         <div class="crm-menu">
-            <div class="flex">
+            <div class="flex flex--start flex--nowrap">
                 <button id="demo-menu-lower-left"
                         class="mdl-button mdl-js-button mdl-button--icon">
                     <i class="material-icons">more_vert</i>
                 </button>
-                <span class="mdl-layout-title crm-menu__title">Файруза Идрисова</span>
+                <span class="mdl-layout-title crm-menu__title">Идрисова Ф. Ш.</span>
                 <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                     for="demo-menu-lower-left">
                     <li class="mdl-menu__item">Редактировать</li>
                 </ul>
             </div>
+
 
             <nav class="mdl-navigation">
 
@@ -61,20 +65,22 @@
     <main class="mdl-layout__content">
         <div class="page-content"><!-- Your page-content goes here -->
 
-            <!--///////-->
-            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-                <div class="mdl-tabs__tab-bar">
-                    <a href="#expectation-panel" class="mdl-tabs__tab is-active">Ожидают</a>
-                    <a href="#consideration-panel" class="mdl-tabs__tab">Рассматриваются</a>
-                    <a href="#registration-panel" class="mdl-tabs__tab">Зарегистрированы</a>
-                    <a href="#refusing-panel" class="mdl-tabs__tab">Отказались</a>
-                </div>
-
-
-                <!--///panel///-->
-                <div class="mdl-tabs__panel is-active" id="expectation-panel">
-
-                    <div class="flex flex--width-100">
+                    <div class="flex flex--around">
+                        <div class="filters">
+                            <div class="mdl-card__supporting-text">
+                                <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                                    <select id="department" class="mdl-selectfield__select">
+                                        <option value=""></option>
+                                        <option value="option1">Ожидают</option>
+                                        <option value="option2">Рассматриваются</option>
+                                        <option value="option1">Зарегистрированы</option>
+                                        <option value="option2">Отказались</option>
+                                    </select>
+                                    <label class="mdl-selectfield__label" for="department">Статус</label>
+                                    <span class="mdl-selectfield__error">Select a value</span>
+                                </div>
+                            </div>
+                        </div>
                         <!--//////Actions buttins filters///////-->
                         <div class="functionality flex">
                             <div>
@@ -98,6 +104,7 @@
 
                             <div class="calendar-todo">
 
+                                <div class="mdl-card__supporting-text">
                                     <table id="calendar2">
                                     <thead>
                                     <tr><td>‹<td colspan="5"><td>›
@@ -147,117 +154,113 @@
                                     Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
                                     }
                                     </script>
-
+                                </div>
 
                                 <!--filters-->
-                                <div class="filters filters--calendar flex">
-                                    <form action="#">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="sample3">
-                                            <label class="mdl-textfield__label" for="sample3">Город</label>
+                                <div class="flex">
+
+                                    <div class="mdl-card__supporting-text">
+                                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                                            <select id="city" class="mdl-selectfield__select ">
+                                                <option value=""></option>
+                                                <option value="option1">Город1</option>
+                                                <option value="option2">Город2</option>
+                                            </select>
+                                            <label class="mdl-selectfield__label" for="city">Город</label>
+                                            <span class="mdl-selectfield__error">Select a value</span>
                                         </div>
-                                    </form>
-                                    <form action="#">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="sample3">
-                                            <label class="mdl-textfield__label" for="sample3">Отдел</label>
+
+                                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                                            <select id="department" class="mdl-selectfield__select">
+                                                <option value=""></option>
+                                                <option value="option1">Отдел1</option>
+                                                <option value="option2">Отдел2</option>
+                                            </select>
+                                            <label class="mdl-selectfield__label" for="department">Отдел</label>
+                                            <span class="mdl-selectfield__error">Select a value</span>
                                         </div>
-                                    </form>
-                                    <form action="#">
+
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                             <input class="mdl-textfield__input" type="text" id="sample3">
                                             <label class="mdl-textfield__label" for="sample3">Исполнитель</label>
                                         </div>
-                                    </form>
-                                    <form action="#">
+
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                             <input class="mdl-textfield__input" type="text" id="sample3">
                                             <label class="mdl-textfield__label" for="sample3">Клиент</label>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                                 <!--//////-->
 
                             </div>
-
-
 
                             <div class="todo-list">
 
 
                                 <!--////client card/////-->
                                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-
-
                                     <div class="mdl-card__menu">
                                         <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3">
                                             <i class="material-icons">more_vert</i>
                                         </button>
                                         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
                                             <li class="mdl-menu__item">Редактировать</li>
-
-                                            <!--/////-->
-                                            <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
-                                            <dialog class="mdl-dialog">
-                                                <h4 class="mdl-dialog__title">Удаление</h4>
-                                                <div class="mdl-dialog__content">
-                                                    <p>
-                                                        Вы действительно желаете удалить?
-                                                    </p>
-                                                </div>
-                                                <div class="mdl-dialog__actions">
-                                                    <button type="button" class="mdl-button">Agree</button>
-                                                    <button type="button" class="mdl-button close">Disagree</button>
-                                                </div>
-                                            </dialog>
-                                            <script>
-                                                var dialog = document.querySelector('dialog');
-                                                var showDialogButton = document.querySelector('#show-dialog');
-                                                if (! dialog.showModal) {
-                                                    dialogPolyfill.registerDialog(dialog);
-                                                }
-                                                showDialogButton.addEventListener('click', function() {
-                                                    dialog.showModal();
-                                                });
-                                                dialog.querySelector('.close').addEventListener('click', function() {
-                                                    dialog.close();
-                                                });
-                                            </script>
-                                            <!--////-->
+                                            <li class="mdl-menu__item">Удалить</li>
                                         </ul>
                                     </div>
-
-
-
                                     <div class="mdl-card__supporting-text">
                                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                             <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
                                             <span class="mdl-checkbox__label">Позвонить клиенту</span>
                                         </label>
                                         <div class="mdl-card__title">
-
                                         </div>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Mauris sagittis pellentesque lacus eleifend lacinia...
                                         orjgfkl
                                     </div>
-
                                     <div class="mdl-card__supporting-text">
-                                        <label for="">исполнитель: </label> Имя Фамилия<br>
-                                        <label for="">клиент: </label> Название клиента<br>
+                                        <label for="">Исполнитель: </label> Имя Фамилия<br>
+                                        <label for="">Клиент: </label> Название клиента<br>
                                     </div>
-
                                     <div class="mdl-card__supporting-text">
                                         19.06.2016 20:00
                                     </div>
-
-
-
                                 </div>
                                 <!--////////-->
 
-
-
+                                <!--////client card/////-->
+                                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+                                    <div class="mdl-card__menu">
+                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="btn3">
+                                            <i class="material-icons">more_vert</i>
+                                        </button>
+                                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+                                            <li class="mdl-menu__item">Редактировать</li>
+                                            <li class="mdl-menu__item">Удалить</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                                            <span class="mdl-checkbox__label">Позвонить клиенту</span>
+                                        </label>
+                                        <div class="mdl-card__title">
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                                        orjgfkl
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <label for="">Исполнитель: </label> Имя Фамилия<br>
+                                        <label for="">Клиент: </label> Название клиента<br>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        19.06.2016 20:00
+                                    </div>
+                                </div>
+                                <!--////////-->
 
                             </div>
 
@@ -265,19 +268,6 @@
                         <!--/////calendar page end/////-->
                     </div>
                     <!--////page-content end////-->
-                </div>
-                <!--////panel end////-->
-
-                <div class="mdl-tabs__panel" id="consideration-panel">
-                </div>
-                <div class="mdl-tabs__panel" id="registration-panel">
-                </div>
-                <div class="mdl-tabs__panel" id="refusing-panel">
-                </div>
-            </div>
-
-
-
         </div>
     </main>
 </div>
