@@ -1,0 +1,40 @@
+.demo-list-action {
+  width: 20em;
+}
+.progress-department {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+
+}
+.progress-department-grapghic {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-start;
+  min-width: 50%;
+}
+.pr-graphic {
+  background-color: #a5d6a7;
+  min-width: 90%;
+  min-height: 20em;
+  margin: @distance-size--normal;
+  padding: @distance-size--normal;
+
+}
+.progress-department-grapghic__image {
+ width: 100%;
+}
+.progress-sector {
+  border: @distance-size--little/2 solid transparent;
+
+  -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+
+  border-image-slice: 1;
+  margin-bottom: @distance-size--normal;
+}

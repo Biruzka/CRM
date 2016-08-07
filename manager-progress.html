@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+    <script src="node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="node_modules/mdl-selectfield/dist/mdl-selectfield.min.css">
+    <script src="node_modules/mdl-selectfield/dist/mdl-selectfield.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">CRM Progress</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <div class="crm-menu">
+            <div class="flex flex--start flex--nowrap">
+                <button id="demo-menu-lower-left"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <span class="mdl-layout-title crm-menu__title">Идрисова Ф. Ш.</span>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-left">
+                    <li class="mdl-menu__item">Редактировать</li>
+                    <li class="mdl-menu__item">Выход</li>
+                </ul>
+            </div>
+
+            <nav class="mdl-navigation">
+
+                <!-- Left aligned menu below button -->
+
+                <a class="mdl-navigation__link" href="">Клиенты</a>
+                <a class="mdl-navigation__link" href="">Календарь</a>
+                <a class="mdl-navigation__link" href="">Прогресс</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="mdl-layout__content">
+
+        <div class="page-content"><!-- Your page-content goes here -->
+
+            <!--///manager///-->
+            <div class="progress-manager">
+                <!--filters-->
+                <div class="flex flex--around">
+                    <div class="filters">
+                        <div class="mdl-card__supporting-text filters__block">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                                <select id="department" class="mdl-selectfield__select">
+                                    <option value=""></option>
+                                    <option value="option1">К1</option>
+                                    <option value="option2">К2</option>
+                                </select>
+                                <label class="mdl-selectfield__label" for="department">По клиенту</label>
+                                <span class="mdl-selectfield__error">Select a value</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/////////-->
+                <div class="demo-list-action mdl-list">
+                    <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                      <label>Клиенты:</label>
+                                    </span>
+                    </li>
+                    <div class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                          <span>Ожидающие</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-content">
+                                        4
+                                    </span>
+                    </div>
+                    <div class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                          <span>Обрабатываемые</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-content">
+                                        10
+                                    </span>
+                    </div>
+                    <div class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                          <span>Зарегистрированные</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-content">
+                                        4
+                                    </span>
+                    </div>
+                    <div class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                          <span>Отказавшиеся</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-content">
+                                        0
+                                    </span>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions mdl-card--border">
+
+                </div>
+
+                <div class="progress-department">
+
+                    <div class="demo-list-action mdl-list">
+                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                              <label>Дела:</label>
+                                            </span>
+                        </li>
+                        <div class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                                  <span>КП</span>
+                                            </span>
+                                            <span class="mdl-list__item-secondary-content">
+                                                4
+                                            </span>
+                        </div>
+                        <div class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                                  <span>Звонок</span>
+                                            </span>
+                                            <span class="mdl-list__item-secondary-content">
+                                                10
+                                            </span>
+                        </div>
+                        <div class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                                  <span>Регистрация</span>
+                                            </span>
+                                            <span class="mdl-list__item-secondary-content">
+                                                4
+                                            </span>
+                        </div>
+                        <div class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                                  <span>Открытие счета</span>
+                                            </span>
+                                            <span class="mdl-list__item-secondary-content">
+                                                0
+                                            </span>
+                        </div>
+                        <div class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                                  <span>Оформление предложения</span>
+                                            </span>
+                                            <span class="mdl-list__item-secondary-content">
+                                                0
+                                            </span>
+                        </div>
+                        <div class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                                  <span>Отправка письма</span>
+                                            </span>
+                                            <span class="mdl-list__item-secondary-content">
+                                                0
+                                            </span>
+                        </div>
+                        <div class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                                  <span>Получение письма</span>
+                                            </span>
+                                            <span class="mdl-list__item-secondary-content">
+                                                0
+                                            </span>
+                        </div>
+                    </div>
+                    <div class="progress-department-grapghic">
+
+                        <div class=" mdl-card__supporting-text flex">
+                            <div>
+                                <label for="">Начиная с: </label>
+                                <div class="">
+                                    <input type="date" name="calendar" value="2016-06-01">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="">По: </label>
+                                <div class="">
+                                    <input type="date" name="calendar" value="2016-06-01">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-department-grapghic__image">
+                            <div class="demo-list-action mdl-list">
+                                <div class="mdl-list__item">
+                                        <span class="mdl-list__item-primary-content">
+                                              <span>Количество всех ToDo</span>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-content">
+                                            4
+                                        </span>
+                                </div>
+                            </div>
+                            <p class="pr-graphic">График: количество добавлений клиентов по датам</p>
+                        </div>
+                    </div>
+                </div>
+                <!--//////////-->
+                <!--//////-->
+            </div>
+
+        </div>
+    </main>
+</div>
+
+
+</body>
+</html>
