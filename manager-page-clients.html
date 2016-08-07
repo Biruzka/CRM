@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
@@ -11,7 +12,6 @@
     <link rel="stylesheet" href="node_modules/mdl-selectfield/dist/mdl-selectfield.min.css">
     <script src="node_modules/mdl-selectfield/dist/mdl-selectfield.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -56,7 +56,6 @@
                 <a class="mdl-navigation__link" href="">Клиенты</a>
                 <a class="mdl-navigation__link" href="">Календарь</a>
                 <a class="mdl-navigation__link" href="">Прогресс</a>
-                <a class="mdl-navigation__link" href="">Распределение</a>
             </nav>
         </div>
     </div>
@@ -70,28 +69,15 @@
                 <div class="filters">
                     <div class="mdl-card__supporting-text filters__block">
                         <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-                            <select id="department" class="mdl-selectfield__select">
-                                <option value=""></option>
-                                <option value="option1">Отдел1</option>
-                                <option value="option2">Отдел2</option>
-                            </select>
-                            <label class="mdl-selectfield__label" for="department">Отдел</label>
-                            <span class="mdl-selectfield__error">Select a value</span>
-                        </div>
-                    </div>
-
-                    <div class="mdl-card__supporting-text filters__block">
-                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
                             <select id="city" class="mdl-selectfield__select ">
                                 <option value=""></option>
                                 <option value="option1">Город1</option>
                                 <option value="option2">Город2</option>
                             </select>
-                            <label class="mdl-selectfield__label" for="city">Город клиента</label>
+                            <label class="mdl-selectfield__label" for="city">Город</label>
                             <span class="mdl-selectfield__error">Select a value</span>
                         </div>
                     </div>
-
                     <div class="mdl-card__supporting-text filters__block">
                         <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
                             <select id="department" class="mdl-selectfield__select">
@@ -101,7 +87,7 @@
                                 <option value="option1">Зарегистрированы</option>
                                 <option value="option2">Отказались</option>
                             </select>
-                            <label class="mdl-selectfield__label" for="department">Статус клиента</label>
+                            <label class="mdl-selectfield__label" for="department">Статус</label>
                             <span class="mdl-selectfield__error">Select a value</span>
                         </div>
                     </div>
@@ -127,9 +113,7 @@
                             <i class="material-icons">more_vert</i>
                         </button>
                         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-                            <li class="mdl-menu__item">Управление менеджерами</li>
                             <li class="mdl-menu__item">Редактировать</li>
-                            <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
                         </ul>
                     </div>
                     <div class="mdl-card__title">
@@ -293,6 +277,5 @@
             $(mp).animate({height: 'hide'}, 500);
         }}
 </script>
-
 </body>
 </html>
