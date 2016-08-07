@@ -208,3 +208,8 @@ label {
   align-content: flex-start;
   flex: 10 3 30em;
 }
+.admin-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

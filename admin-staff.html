@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+    <script src="node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="node_modules/mdl-selectfield/dist/mdl-selectfield.min.css">
+    <script src="node_modules/mdl-selectfield/dist/mdl-selectfield.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">CRM Departments</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <div class="crm-menu">
+            <div class="flex flex--start flex--nowrap">
+                <button id="demo-menu-lower-left"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <span class="mdl-layout-title crm-menu__title">Админка</span>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-left">
+                    <li class="mdl-menu__item">Выход</li>
+                </ul>
+            </div>
+
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Отделы</a>
+                <a class="mdl-navigation__link" href="">Сотрудники</a>
+                <a class="mdl-navigation__link" href="">Прогресс</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="mdl-layout__content">
+
+        <div class="page-content">
+
+            <!--filters-->
+            <div class="flex flex--around">
+                <div class="filters">
+
+                </div>
+
+                <div class="functionality flex">
+                    <div>
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--/////////-->
+
+            <div class="content-area">
+
+                <div class="admin-block">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                        <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Фамилия</th>
+                            <th class="mdl-data-table__cell--non-numeric">Имя</th>
+                            <th class="mdl-data-table__cell--non-numeric">Отчество</th>
+                            <th class="mdl-data-table__cell--non-numeric">Телефон</th>
+                            <th class="mdl-data-table__cell--non-numeric">Почта</th>
+                            <th class="mdl-data-table__cell--non-numeric">Адрес</th>
+                            <th class="mdl-data-table__cell--non-numeric">Отдел</th>
+                            <th class="mdl-data-table__cell--non-numeric">Должность</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Фамилиевич</td>
+                            <th class="mdl-data-table__cell--non-numeric">Вадим</th>
+                            <th class="mdl-data-table__cell--non-numeric">Исмагилов</th>
+                            <th class="mdl-data-table__cell--non-numeric">89065439765</th>
+                            <th class="mdl-data-table__cell--non-numeric">biruzka@gmail.com</th>
+                            <th class="mdl-data-table__cell--non-numeric">Казань Глушко 5 32</th>
+                            <th class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</th>
+                            <th class="mdl-data-table__cell--non-numeric">Менеджер</th>
+                            <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-1">
+                                <i class="material-icons">more_vert</i>
+                            </button>
+                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-1">
+                                    <li class="mdl-menu__item">Редактировать</li>
+                                    <li class="mdl-menu__item">Удалить</li>
+                                </ul>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Фамилиевич</td>
+                            <th class="mdl-data-table__cell--non-numeric">Вадим</th>
+                            <th class="mdl-data-table__cell--non-numeric">Исмагилов</th>
+                            <th class="mdl-data-table__cell--non-numeric">89065439765</th>
+                            <th class="mdl-data-table__cell--non-numeric">biruzka@gmail.com</th>
+                            <th class="mdl-data-table__cell--non-numeric">Казань Глушко 5 32</th>
+                            <th class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</th>
+                            <th class="mdl-data-table__cell--non-numeric">Менеджер</th>
+                            <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-2">
+                                <i class="material-icons">more_vert</i>
+                            </button>
+                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-2">
+                                    <li class="mdl-menu__item">Редактировать</li>
+                                    <li class="mdl-menu__item">Удалить</li>
+                                </ul>
+                            </th>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
