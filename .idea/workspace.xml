@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="482be0a0-0bdb-4a41-8509-89c6602a9898" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/enter/base.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/enter/enter.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/progress/base.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/progress/progress.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/enter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manager-progress.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/progress.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-department-create.html" afterPath="$PROJECT_DIR$/admin-department-create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-departments.html" afterPath="$PROJECT_DIR$/admin-departments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-employee-create.html" afterPath="$PROJECT_DIR$/admin-employee-create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-staff.html" afterPath="$PROJECT_DIR$/admin-staff.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignment.html" afterPath="$PROJECT_DIR$/assignment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calendar.html" afterPath="$PROJECT_DIR$/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/enter/enter.less" afterPath="$PROJECT_DIR$/css/enter/enter.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.less" afterPath="$PROJECT_DIR$/css/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit-create-client.html" afterPath="$PROJECT_DIR$/edit-create-client.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit-create-todo.html" afterPath="$PROJECT_DIR$/edit-create-todo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/enter.html" afterPath="$PROJECT_DIR$/enter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manager-page-clients.html" afterPath="$PROJECT_DIR$/manager-page-clients.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manager-progress.html" afterPath="$PROJECT_DIR$/manager-progress.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/progress.html" afterPath="$PROJECT_DIR$/progress.html" />
     </list>
     <ignored path="CRM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,29 +39,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="progress.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/progress.html">
+      <file leaf-file-name="enter.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="266" column="28" selection-start-line="266" selection-start-column="28" selection-end-line="266" selection-end-column="28" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="359">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="progress.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/progress/progress.less">
+      <file leaf-file-name="readme" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enter.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/enter/enter.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -89,27 +97,28 @@
         <option value="$PROJECT_DIR$/css/editor-client/editor-client.less" />
         <option value="$PROJECT_DIR$/css/assignment/base.less" />
         <option value="$PROJECT_DIR$/css/assignment/assignment.less" />
-        <option value="$PROJECT_DIR$/assignment.html" />
-        <option value="$PROJECT_DIR$/calendar.html" />
-        <option value="$PROJECT_DIR$/edit-create-client.html" />
-        <option value="$PROJECT_DIR$/main.html" />
-        <option value="$PROJECT_DIR$/manager-page-clients.html" />
         <option value="$PROJECT_DIR$/css/admin/base.less" />
-        <option value="$PROJECT_DIR$/admin-departments.html" />
-        <option value="$PROJECT_DIR$/admin-department-create.html" />
         <option value="$PROJECT_DIR$/css/admin/department.less" />
-        <option value="$PROJECT_DIR$/admin-staff.html" />
-        <option value="$PROJECT_DIR$/admin-employee-create.html" />
         <option value="$PROJECT_DIR$/css/enter/base.less" />
-        <option value="$PROJECT_DIR$/css/enter/enter.less" />
-        <option value="$PROJECT_DIR$/enter.html" />
         <option value="$PROJECT_DIR$/css/progress/base.less" />
         <option value="$PROJECT_DIR$/css/style.less" />
         <option value="$PROJECT_DIR$/css/page-content/content.less" />
-        <option value="$PROJECT_DIR$/edit-create-todo.html" />
-        <option value="$PROJECT_DIR$/manager-progress.html" />
-        <option value="$PROJECT_DIR$/progress.html" />
         <option value="$PROJECT_DIR$/css/progress/progress.less" />
+        <option value="$PROJECT_DIR$/progress.html" />
+        <option value="$PROJECT_DIR$/admin-department-create.html" />
+        <option value="$PROJECT_DIR$/admin-employee-create.html" />
+        <option value="$PROJECT_DIR$/assignment.html" />
+        <option value="$PROJECT_DIR$/edit-create-client.html" />
+        <option value="$PROJECT_DIR$/edit-create-todo.html" />
+        <option value="$PROJECT_DIR$/manager-page-clients.html" />
+        <option value="$PROJECT_DIR$/manager-progress.html" />
+        <option value="$PROJECT_DIR$/readme" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/calendar.html" />
+        <option value="$PROJECT_DIR$/admin-departments.html" />
+        <option value="$PROJECT_DIR$/admin-staff.html" />
+        <option value="$PROJECT_DIR$/css/enter/enter.less" />
+        <option value="$PROJECT_DIR$/enter.html" />
       </list>
     </option>
   </component>
@@ -120,9 +129,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="61" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1305" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -149,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -179,7 +187,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -196,9 +204,14 @@
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,8 +222,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="Less" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.manager-progress.html">
-    <configuration default="false" name="calendar.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/calendar.html">
+  <component name="RunManager" selected="JavaScript Debug.main.html">
+    <configuration default="false" name="progress.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/progress.html">
       <method />
     </configuration>
     <configuration default="false" name="edit-create-todo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/edit-create-todo.html">
@@ -219,10 +232,10 @@
     <configuration default="false" name="main.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/main.html">
       <method />
     </configuration>
-    <configuration default="false" name="progress.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/progress.html">
+    <configuration default="false" name="enter.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/enter.html">
       <method />
     </configuration>
-    <configuration default="false" name="manager-progress.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/manager-progress.html">
+    <configuration default="false" name="manager-page-clients.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CRM/manager-page-clients.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -279,19 +292,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.calendar.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.progress.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.edit-create-todo.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.main.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.progress.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.manager-progress.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.enter.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.manager-page-clients.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.manager-progress.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.progress.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.edit-create-todo.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.main.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.calendar.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.main.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.manager-page-clients.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.enter.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.edit-create-todo.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.progress.html" />
       </list>
     </recent_temporary>
   </component>
@@ -312,18 +325,19 @@
       <workItem from="1470514926712" duration="763000" />
       <workItem from="1470546485249" duration="12112000" />
       <workItem from="1470567157980" duration="7888000" />
-      <workItem from="1470577904050" duration="6329000" />
+      <workItem from="1470577904050" duration="6927000" />
+      <workItem from="1470643740598" duration="5541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41831000" />
+    <option name="totallyTimeSpent" value="47970000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="24" width="1305" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="61" y="-4" width="1305" height="772" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -357,7 +371,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.html</url>
-          <line>149</line>
+          <line>148</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -365,6 +379,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/progress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="266" column="28" selection-start-line="266" selection-start-column="28" selection-end-line="266" selection-end-column="28" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin-departments.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -376,7 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -396,7 +425,6 @@
           <caret line="172" column="61" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="61" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -468,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,25 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin-department-create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="108" column="49" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/admin/department.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin-staff.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="104" column="74" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -520,35 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/enter/enter.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin-employee-create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="57" column="10" selection-start-line="37" selection-start-column="4" selection-end-line="57" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin-departments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="143" column="6" selection-start-line="16" selection-start-column="0" selection-end-line="143" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -570,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,89 +567,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/progress/progress.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-create-client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="179" column="94" selection-start-line="179" selection-start-column="94" selection-end-line="179" selection-end-column="94" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
-          <caret line="150" column="71" selection-start-line="150" selection-start-column="69" selection-end-line="150" selection-end-column="71" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-create-todo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="134" column="73" selection-start-line="134" selection-start-column="73" selection-end-line="134" selection-end-column="73" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="153" column="26" selection-start-line="147" selection-start-column="20" selection-end-line="153" selection-end-column="26" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager-page-clients.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="66" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager-progress.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/progress.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="266" column="28" selection-start-line="266" selection-start-column="28" selection-end-line="266" selection-end-column="28" />
+        <state relative-caret-position="404">
+          <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -678,10 +593,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/progress/progress.less">
+    <entry file="file://$PROJECT_DIR$/admin-department-create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="369">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-create-client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager-page-clients.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="58" column="75" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="59" column="81" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager-progress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-employee-create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-staff.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="71" column="79" selection-start-line="71" selection-start-column="79" selection-end-line="71" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="77" column="82" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="112" column="84" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="84" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-departments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-create-todo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/enter/enter.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>

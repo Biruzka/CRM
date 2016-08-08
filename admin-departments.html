@@ -50,9 +50,9 @@
             </div>
 
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Отделы</a>
-                <a class="mdl-navigation__link" href="">Сотрудники</a>
-                <a class="mdl-navigation__link" href="">Прогресс</a>
+                <a class="mdl-navigation__link" href="admin-departments.html">Отделы</a>
+                <a class="mdl-navigation__link" href="admin-staff.html">Сотрудники</a>
+                <a class="mdl-navigation__link" href="progress.html">Прогресс</a>
             </nav>
         </div>
     </div>
@@ -69,7 +69,7 @@
 
                 <div class="functionality flex">
                     <div>
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                        <button onclick="location.href = 'admin-department-create.html'"  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
                             <i class="material-icons">add</i>
                         </button>
                     </div>
@@ -78,64 +78,65 @@
             <!--/////////-->
 
             <div class="content-area">
+                <div class="admin-block">
+                    <div class="departments">
+                        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                            <thead>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric">Город</th>
+                                <th>Улица</th>
+                                <th>Дом</th>
+                                <th>Название</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">Казань</td>
+                                <td class="mdl-data-table__cell--non-numeric">Щепкина</td>
+                                <td>72</td>
+                                <td class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</td>
+                                <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-1">
+                                    <i class="material-icons">more_vert</i>
+                                </button>
+                                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-1">
+                                        <li class="mdl-menu__item">Редактировать</li>
+                                        <li class="mdl-menu__item">Удалить</li>
+                                    </ul>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">Казань</td>
+                                <td class="mdl-data-table__cell--non-numeric">Щепкина</td>
+                                <td>72</td>
+                                <td class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</td>
+                                <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-2">
+                                    <i class="material-icons">more_vert</i>
+                                </button>
+                                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-2">
+                                        <li class="mdl-menu__item">Редактировать</li>
+                                        <li class="mdl-menu__item">Удалить</li>
+                                    </ul>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">Казань</td>
+                                <td class="mdl-data-table__cell--non-numeric">Щепкина</td>
+                                <td>72</td>
+                                <td class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</td>
+                                <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-3">
+                                    <i class="material-icons">more_vert</i>
+                                </button>
+                                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-3">
+                                        <li class="mdl-menu__item">Редактировать</li>
+                                        <li class="mdl-menu__item">Удалить</li>
+                                    </ul>
+                                </th>
+                            </tr>
 
-                <div class="departments">
-                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-                        <thead>
-                        <tr>
-                            <th class="mdl-data-table__cell--non-numeric">Город</th>
-                            <th>Улица</th>
-                            <th>Дом</th>
-                            <th>Название</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Казань</td>
-                            <td class="mdl-data-table__cell--non-numeric">Щепкина</td>
-                            <td>72</td>
-                            <td class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</td>
-                            <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-1">
-                                <i class="material-icons">more_vert</i>
-                            </button>
-                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-1">
-                                    <li class="mdl-menu__item">Редактировать</li>
-                                    <li class="mdl-menu__item">Удалить</li>
-                                </ul>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Казань</td>
-                            <td class="mdl-data-table__cell--non-numeric">Щепкина</td>
-                            <td>72</td>
-                            <td class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</td>
-                            <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-2">
-                                <i class="material-icons">more_vert</i>
-                            </button>
-                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-2">
-                                    <li class="mdl-menu__item">Редактировать</li>
-                                    <li class="mdl-menu__item">Удалить</li>
-                                </ul>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Казань</td>
-                            <td class="mdl-data-table__cell--non-numeric">Щепкина</td>
-                            <td>72</td>
-                            <td class="mdl-data-table__cell--non-numeric">отд-Казань-Щепкина-72</td>
-                            <th><button class="mdl-button mdl-js-button mdl-button--icon" id="btn-3">
-                                <i class="material-icons">more_vert</i>
-                            </button>
-                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-3">
-                                    <li class="mdl-menu__item">Редактировать</li>
-                                    <li class="mdl-menu__item">Удалить</li>
-                                </ul>
-                            </th>
-                        </tr>
-
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
             </div>

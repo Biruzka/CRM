@@ -38,7 +38,7 @@
     <div class="mdl-layout__drawer">
         <div class="crm-menu">
             <div class="flex flex--start flex--nowrap">
-                <button id="demo-menu-lower-left"
+                <button  id="demo-menu-lower-left"
                         class="mdl-button mdl-js-button mdl-button--icon">
                     <i class="material-icons">more_vert</i>
                 </button>
@@ -54,10 +54,10 @@
 
                 <!-- Left aligned menu below button -->
 
-                <a class="mdl-navigation__link" href="">Клиенты</a>
-                <a class="mdl-navigation__link" href="">Календарь</a>
-                <a class="mdl-navigation__link" href="">Прогресс</a>
-                <a class="mdl-navigation__link" href="">Распределение</a>
+                <a class="mdl-navigation__link" href="main.html">Клиенты</a>
+                <a class="mdl-navigation__link" href="calendar.html">Календарь</a>
+                <a class="mdl-navigation__link" href="progress.html">Прогресс</a>
+                <a class="mdl-navigation__link" href="assignment.html">Распределение</a>
             </nav>
         </div>
     </div>
@@ -110,7 +110,7 @@
 
                 <div class="functionality flex">
                     <div>
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                        <button onclick="location.href = 'edit-create-client.html'" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
                             <i class="material-icons">add</i>
                         </button>
                     </div>
@@ -128,7 +128,6 @@
                             <i class="material-icons">more_vert</i>
                         </button>
                         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-                            <li class="mdl-menu__item">Управление менеджерами</li>
                             <li class="mdl-menu__item">Редактировать</li>
                             <li class="mdl-menu__item"  id="show-dialog" >Удалить</li>
                         </ul>

@@ -221,10 +221,9 @@ label {
   width: 512px;
 }
 .demo-card-wide > .mdl-card__title {
-  height: 10em;
-  background-image: linear-gradient(to top, rgba(30, 87, 153, 0), rgba(30, 87, 153, 0.8), #1e5799, #1e5799, #2989d8, #1e5799, #1e5799, rgba(30, 87, 153, 0.8), rgba(30, 87, 153, 0));
   color: #fff;
-  padding: 10px;
+  height: 10em;
+  background-color: #3F51B5;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
